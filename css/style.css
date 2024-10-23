@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 700px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+/* HEADER -------------------------------- HEADER */
+header{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background-color: wheat;
+    justify-content: space-between;
+    text-decoration: none;
+    align-items: center;
+}
+.icono{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+.icono img{
+    height: 60px;
+    margin-left: 0;
+}
+nav a{
+    color: black;
+    margin: 5px;
+    font-weight: 600px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: orangered;
+    text-decoration: none;
+}
+/* MAIN ---------------------------------- MAIN */
+main{
+    width: 100%;
+}
+.espaciolibre{
+    width: 100%;
+    height: 60px;
+}
+.espaciolibre img{
+    height: 60px;
+    margin-left: 0;
+}
+/* TEXTO NAVEGAR*/
+.flotante {
+    display: flex;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+.flotante a{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+    text-align: right;
+    font-weight: bold;
+    color: wheat;
+}
