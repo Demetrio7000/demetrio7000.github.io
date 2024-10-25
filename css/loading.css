@@ -13,14 +13,17 @@
     z-index: 3;
     /* Crear animacion*/
     animation: loader 2s linear forwards;
-
+}
+.loader img{
+    width: 20%;
+    border-radius: 50px;
 }
 @keyframes loader{
     0%{
         opacity: 1;
         visibility: visible;
     }
-    80%{
+    90%{
         opacity: 1;
         visibility: visible;
     }
@@ -60,7 +63,7 @@
 .escribir { 
 	position: relative; 
 	float: left;
-	color: #fff;
+	color: #66eeaa;
 	font-size: 2.5em;
 }
 

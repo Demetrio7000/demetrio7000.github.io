@@ -1,0 +1,202 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    min-width: 700px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+/* HEADER -------------------------------- HEADER */
+header{
+    width: 100%;
+    min-width: 700px;
+    display: flex;
+    position: fixed;
+    background-color: wheat;
+    justify-content: space-between;
+    text-decoration: none;
+    align-items: center;
+    z-index: 3;
+}
+.icono{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+.icono img{
+    height: 60px;
+    margin-left: 0;
+}
+nav a{
+    color: black;
+    margin: 5px;
+    font-weight: 600px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: orangered;
+    text-decoration: none;
+}
+section:before {
+    content: "";
+    display: block;
+    height: 70px; /* Ajusta a la altura del header */
+    margin-top: -70px; /* Debe ser igual a la altura del header */
+}
+/* MAIN ---------------------------------- MAIN */
+main{
+    width: 100%;
+    padding-top: 70px;
+}
+/* TEXTO NAVEGAR*/
+.flotante {
+    display: flex;
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    z-index: 3;
+}
+.vertical{
+    display: flex;
+    flex-direction: column;
+}
+.flotante a{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: orange;
+    text-align: left;
+    font-weight: bold;
+    color: orange;
+    text-decoration: none;
+}
+.flotante a:hover {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: orangered;
+    color: orangered;
+}
+/* BLOQUE INICIO ----------------------- BLOQUE INICIO */
+.contenedor {
+    width: 100%;
+    min-width: 700px;
+    max-width: 1600px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Divisiones del contenido */
+.divicion-30 {
+    width: 25%;
+    float: left;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.divicion-30 img{
+    width: 90%;
+}
+.icono-largo h1{
+    color: orange;
+}
+.divicion-70 {
+    width: 75%;
+    float: right;
+    padding: 20px;
+}
+.column h1 {
+    font-size: 28px;
+    color: orange;
+    margin-bottom: 10px;
+}
+.column p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilos para los cuadros de libros */
+.contenido-70 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.cuadro-contenido {
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.cuadro-contenido img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.cuadro-contenido h5 {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Sección de contacto */
+.mitad {
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+.mitad h3 {
+    color: orange;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+#contactos p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.redes li a {
+    color: orange;
+    font-weight: bold;
+    text-decoration: none;
+}
+.redes li a:hover {
+    color: orangered;
+}
+
+/* Formulario de contacto */
+label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+.button.expanded {
+    background-color: orange;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.button.expanded:hover {
+    background-color: orangered;
+}
+
+/* Limpiar floats */
+.contenido::after {
+    content: "";
+    display: table;
+    clear: both;
+}

@@ -8,7 +8,7 @@
         <title>CAZANDO SIRENAS</title>
         <link rel="short icon" href="https://i.ibb.co/XjqQdT4/Cazando-sirenas-Logo.png">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-clasicos.css">
         <link rel="stylesheet" href="css/loading.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,9 +32,6 @@
         </header>
 
         <main>
-            <div id="inicio" class="espaciolibre">
-                <img src="https://i.ibb.co/XjqQdT4/Cazando-sirenas-Logo.png" alt="Cazando-sirenas-Logo">
-            </div>
             <div class="flotante">
                 <nav>
                     <a href="#inicio">Inicio</a>
@@ -42,10 +39,10 @@
                     <a href="#pronto">Pronto</a>
                 </nav>
             </div>
-            <section>
-                <div class="contenedor2">
+            <section id="inicio">
+                <div class="contenedor">
                     <div class="contenido2">
-                        <img src="" alt="">
+                        <img src="imagenes/libro-monto.jpg" alt="">
                     </div>
                     <div class="contenido2">
                         <p>Aqui encontraras</p>
@@ -55,6 +52,18 @@
                 </div>
             </section>
             <section id="disponibles">
+                <div class="contenedor">
+                    <div class="contenido">
+                        <h1>¡Libros disponibles!</h1>
+                        <p>
+                            Te gusta la lectura pero nunca sabes qué leer? 
+                            Aquí tienes los libros clásicos de la historia. 
+                            Elige el que mas de gusta.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section>
                 <div class="contenedor">
                     <div class="bloque-clasico">
                         <div class="cuadro-libro">
@@ -87,14 +96,27 @@
             <section id="pronto">
                 <div class="contenedor">
                     <div class="contenido">
-                        <img src="https://i.ibb.co/CbyyHsw/libro-anna-karenina.webp" alt="libro-anna-karenina">
+                        <h1>Muy Pronto</h1>
+                        <p>
+                            Ana Karénina es una novela del autor ruso León Tolstói, 
+                            publicada por primera vez en forma de libro en 1878. 
+                            Muchos escritores la consideran una de las obras 
+                            literarias más grandes jamás escritas, 
+                            y el mismo Tolstói la llamó su primera novela verdadera.
+                        </p>
+                        <div class="cuadro-libro">
+                            <h4>Anna Karenina</h4>
+                            <button class="boton-agregar">RESERVAR</button>
+                            <p>S./ 70.00</p>
+                            <img src="https://i.ibb.co/CbyyHsw/libro-anna-karenina.webp" alt="libro-anna-karenina">
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="loader">
-                <div id="animationWindow"></div>
+                <img src="imagenes/Libro-hojeandose.gif" alt="">
                 <div>
-                    <h1 class="escribir"> Cargando...<span>&#160;</span></h1>                    
+                    <h1 class="escribir">Cargando...<span>&#160;</span></h1>                    
                 </div>
             </section>
         </main>
