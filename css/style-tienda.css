@@ -13,8 +13,9 @@ html,body{
 header{
     width: 100%;
     min-width: 700px;
-    display: flex;
+    display: flex;  
     position: fixed;
+    /* background: radial-gradient(red,yellow); */
     background-color: wheat;
     justify-content: space-between;
     text-decoration: none;
@@ -96,7 +97,7 @@ section{
 }
 .tabla>div{
     margin: 0;
-    padding: 15px;
+    padding: 20px;
 }
 .divicion-30{
     flex: 3;
@@ -126,16 +127,21 @@ section{
 .mapa iframe {
     border-radius: 20px;
 }
-/* Sección de Inicio */
+/* Seccion formulario*/
+.contactame{
+    margin: 0 50px;
+}
 .contactame h3{
     color: orange;
     font-size: 3rem;
 }
+.contactame h4{
+    color: orange;
+    font-size: 2rem;
+}
 .contactame p{
     font-size: 1.2rem;
 }
-
-/* Seccion formulario*/
 .redes {
     list-style-type: none;
     padding: 0;
@@ -151,45 +157,62 @@ section{
 .redes a:hover {
     color: orangered;
 }
+/* Formulario*/
 label {
     display: block;
     font-size: 1.3rem;
-    color: #333;
-    margin-bottom: 10px;
+    color: black;
+    margin-bottom: 5px;
 }
 input {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid wheat;
+    border-radius: 5px;
     font-size: 1rem;
     resize: none;
 }
+input:hover{
+    border: 1px solid orange;
+}
+input:focus-visible{
+    border: 1px solid red;
+    background-color: wheat;
+}
+
 textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid wheat;
+    border-radius: 5px;
     font-size: 1rem;
     resize: none;
     height: 100px;
 }
-.button {
+textarea:hover{
+    border: 1px solid orange;
+}
+textarea:focus-visible{
+    border: 1px solid red;
+    background-color: wheat;
+}
+.boton-enviar {
     display: block;
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     font-size: 1rem;
     color: wheat;
     background-color: orange;
-    border: none;
-    border-radius: 10px;
+    border: 0 5px;
+    border-radius: 5px;
     cursor: pointer;
     text-align: center;
 }
-.button:hover {
+.boton-enviar:hover {
     background-color: orangered;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 700px) {

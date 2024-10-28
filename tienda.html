@@ -67,20 +67,31 @@
                                 <li><a href="#">051-123456</a></li>
                             </ul>
                         </div>
-                        <div class="divicion-50 contactame">
-                            <label>
-                                Nombre
-                                <input type="text" placeholder="Nombre y apellido">
-                            </label>
-                            <label>
-                                Correo electrónico
-                                <input type="text" placeholder="Email">
-                            </label>
-                            <label>
-                                Mensaje
-                                <textarea placeholder="¡Hola! aqui puedes dejar tu mensaje:"></textarea>
-                            </label>
-                            <input type="submit" class="button expanded" value="Enviar">
+                        <div class="divicion-50">
+                            <div class=" contactame">
+                                <h4>Enviar comentarios</h4>
+                                <form action="https://formsubmit.co/demetrio1598589@gmail.com" method="POST">
+                                    <label>
+                                        Nombre
+                                        <input type="text" name="nombre" placeholder="Nombre y apellido">
+                                    </label>
+                                    <label>
+                                        Correo electrónico
+                                        <input type="text" name="correo" placeholder="Ejemplo@email.com">
+                                    </label>
+                                    <label>
+                                        Asunto
+                                        <input type="text" name="asunto" placeholder="Pedidos">
+                                    </label>
+                                    <label>
+                                        Mensaje
+                                        <textarea placeholder="¡Hola! aqui puedes dejar tu mensaje:" name="comentarios"></textarea>
+                                    </label>
+                                    <input type="submit" class="boton-enviar" value="Enviar">
+                                    <!-- <input type="hidden" name="_next" value=""> -->
+                                </form>
+                            </div>
+                            
                         </div>
                     </div>
                     
