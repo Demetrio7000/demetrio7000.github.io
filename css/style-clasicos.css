@@ -33,7 +33,7 @@ header{
 nav a{
     color: black;
     margin: 5px;
-    font-weight: 600px;
+    font-weight: 600;
     padding-right: 10px;
     text-decoration: none;
 }
@@ -132,11 +132,18 @@ main{
 }
 .cuadro-libro {
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
     width: 250px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     text-align: center;
+}
+.cuadro-libro:hover{
+    padding: 10px;
+    text-align: center;
+    background-color: wheat;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
 .cuadro-libro h4 {
     font-size: 1.2rem;
@@ -166,6 +173,7 @@ main{
 }
 .boton-agregar:hover {
     background-color: orangered;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7)
 }
 
 /* Sección Pronto */
@@ -181,7 +189,6 @@ main{
     font-size: 1rem;
     color: #555;
     max-width: 800px;
-    margin: 0 auto 30px auto;
 }
 #pronto .cuadro-libro {
     display: inline-block;

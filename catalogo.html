@@ -6,10 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="Descripción" content="Aqui encontraras libros exclusivos, únicos firmado por sus autores.">
         <title>CAZANDO SIRENAS</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
         <link rel="short icon" href="https://i.ibb.co/XjqQdT4/Cazando-sirenas-Logo.png">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style-catalogo.css">
         <link rel="stylesheet" href="css/loading.css">
+        <link rel="stylesheet" href="css/footer.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -24,21 +26,21 @@
                 <nav>
                     <a href="index.html">Portada</a>
                     <a href="exclusivo.html">Exclusivos</a>
-                    <a href="clasicos.html">Clasicos</a>
-                    <a href="catalogo.html">Catalogo</a>
+                    <a href="clasicos.html">Clásicos</a>
+                    <a href="catalogo.html">Catálogo</a>
                     <a href="tienda.html">Tienda</a>
                 </nav>
             </div>
-        </header>
-        <main>
             <div class="flotante">
                 <nav class="vertical">
                     <a href="#inicio">Inicio</a>
                     <a href="#clasicos">Clasicos</a>
                     <a href="#exclusivos">Exclusivos</a>
-                    <a href="#contactos">Contactos</a>
+                    <a href="#contactos">Pedidos</a>
                 </nav>
             </div>
+        </header>
+        <main>
             <section id="inicio">
                 <div class="contenedor">
                     <div class="contenido">
@@ -53,7 +55,7 @@
                             </div>
                         </div>
             
-                        <div class="divicion-70">
+                        <div id="clasicos" class="divicion-70">
                             <div class="contenido-70">
                                 <div class="column">
                                     <h1>Nuestro catálogo</h1>
@@ -65,72 +67,59 @@
                                     <br>
                                 </div>
                             </div>
-                            <div id="clasicos" class="contenido-70">
+                            <div class="contenido-70">
                                 <div class="cuadro-contenido">
                                     <img class="thumbnail" src="https://i.ibb.co/YPmK747/libro-Codigo-da-vinci.jpg" alt="libro-Codigo-da-vinci">
                                     <h5>Divina comedia</h5>
+                                    <button class="boton-comprar">COMPRAR<br><i class="fa-solid fa-cart-shopping fa-2x"></i></button>
                                 </div>
                                 <div class="cuadro-contenido">
                                     <img src="https://i.ibb.co/F45pLkV/Libro-Quijote.jpg" alt="Libro-Quijote">
-                                    <h5>Don quijote d ela mancha</h5>
+                                    <h5>Don quijote de la mancha</h5>
+                                    <button class="boton-comprar">COMPRAR<br><i class="fa-solid fa-cart-shopping fa-2x"></i></button>
                                 </div>
                                 <div class="cuadro-contenido">
                                     <img src="https://i.ibb.co/Gx75qvx/libro-la-divina-comedia.jpg" alt="libro-la-divina-comedia">
                                     <h5>La divina comedia</h5>
+                                    <button class="boton-comprar">COMPRAR<br><i class="fa-solid fa-cart-shopping fa-2x"></i></button>
                                 </div>
                                 <div class="cuadro-contenido">
                                     <img src="https://i.ibb.co/znQ8qyr/libro-los-miserables.jpg" alt="libro-los-miserables">
                                     <h5>Los miserables</h5>
+                                    <button class="boton-comprar">COMPRAR<br><i class="fa-solid fa-cart-shopping fa-2x"></i></button>
+                                </div>
+                                <div class="cuadro-contenido">
+                                    <img src="imagenes/crimen-y-castigo.webp" alt="crimen-y-castigo">
+                                    <h5>Crimen y castigo</h5>
+                                    <button class="boton-comprar">COMPRAR<br><i class="fa-solid fa-cart-shopping fa-2x"></i></button>
+                                </div>
+                                <div class="cuadro-contenido">
+                                    <img src="imagenes/el-viejo-y-el-mar.webp" alt="el-viejo-y-el-mar">
+                                    <h5>El viejo y el mar</h5>
+                                    <button class="boton-comprar">COMPRAR<br><i class="fa-solid fa-cart-shopping fa-2x"></i></button>
                                 </div>
                                 <div id="exclusivos" class="cuadro-contenido">
                                     <img src="https://i.ibb.co/S3x9HMz/Coleccion-Dune.png" alt="Coleccion-Dune">
                                     <h5>Coleccion Dune</h5>
+                                    <button class="boton-comprar">COMPRAR<br><i class="fa-solid fa-cart-shopping fa-2x"></i></button>
                                 </div>
                                 <div class="cuadro-contenido">
                                     <img src="https://i.ibb.co/F3s3PSv/Coleccion-Harry-Potter.png" alt="Coleccion-Harry-Potter">
                                     <h5>Coleccion Harry Potter</h5>
+                                    <button class="boton-comprar">COMPRAR<br><i class="fa-solid fa-cart-shopping fa-2x"></i></button>
                                 </div>
                                 <div class="cuadro-contenido">
                                     <img src="https://i.ibb.co/xHH528n/Coleccion-Los-juegos-del-hambre.png" alt="Coleccion-Los-juegos-del-hambre">
                                     <h5>Coleccion Los juegos del hambre</h5>
+                                    <button class="boton-comprar">COMPRAR<br><i class="fa-solid fa-cart-shopping fa-2x"></i></button>
                                 </div>
                                 <div class="cuadro-contenido">
                                     <img src="https://i.ibb.co/r4TqyVB/Coleccion-Senor-de-los-anillos.png" alt="Coleccion-Senor-de-los-anillos">
                                     <h5>Coleccion Señor de los anillos</h5>
+                                    <button class="boton-comprar">COMPRAR<br><i class="fa-solid fa-cart-shopping fa-2x"></i></button>
                                 </div>
                             </div>
-            
                             <hr>
-                
-                            <div id="contactos" class="contenido-70">
-                                <div class="mitad">
-                                    <h3>Pedidos</h3>
-                                    <p>
-                                        Tus pedidos a un click. Elige tu favorito, 
-                                        puedes encontrarnos en nuestras redes, o enviarnos un mensaje.
-                                    </p>
-                                    <ul class="redes">
-                                        <li><a href="#">Facebook</a></li>
-                                        <li><a href="#">Twitter</a></li>
-                                        <li><a href="#">051-123456</a></li>
-                                    </ul>
-                                </div>
-                                <div class="mitad">
-                                    <label>
-                                        Nombre
-                                        <input type="text" placeholder="nombre y apellido">
-                                    </label>
-                                    <label>
-                                        Correo electrónico
-                                        <input type="text" placeholder="Email">
-                                    </label>
-                                    <label>
-                                        Mensaje
-                                        <textarea placeholder="¡Hola! aqui puedes dejar tu mensaje:"></textarea>
-                                    </label>
-                                    <input type="submit" class="button expanded" value="Enviar">
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -142,6 +131,40 @@
                 </div>
             </section>
         </main>
+        <footer>
+            <div class="marco">
+                <div class="cuadro">
+                    <div class="columna-33">
+                        <img src="https://i.ibb.co/XjqQdT4/Cazando-sirenas-Logo.png" alt="cazando" class="logo-footer">
+                    </div>
+                    <div class="columna-30">
+                        <h3>
+                            SOPORTE
+                        </h3>
+                        <ul>
+                            <li><a href="#">Mis pedidos</a></li>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                            <li><a href="#">¿Quieres publicar?</a></li>
+                            <li>Telefono: 051-123123</li>
+                        </ul>
+                    </div>
+                    <div class="columna-30">
+                        <h3>
+                            REDES SOCIALES
+                        </h3>
+                        <ul class="redes">
+                            <li><a href="#"><i class="fa fa-envelope" ></i> Gmail</a></li>
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                            <li><a href="#"><i class="fa-brands fa-square-twitter"></i> Twitter</a></li>
+                            <li><a href="#"><i class="fa-brands fa-square-whatsapp"></i> Whatsapp</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="demetrio">
+                &copy; Derecho Reservados - 2024 - Demetrio
+            </div>
+        </footer>
     </body>   
     <script src="css/loading.js"></script>
 </html>

@@ -33,7 +33,6 @@ header{
 nav a{
     color: black;
     margin: 5px;
-    font-weight: 600px;
     padding-right: 10px;
     text-decoration: none;
 }
@@ -79,6 +78,7 @@ main{
 }
 /* BLOQUE INICIO ----------------------- BLOQUE INICIO */
 .contenedor {
+    display: table;
     width: 100%;
     min-width: 700px;
     max-width: 1600px;
@@ -122,11 +122,42 @@ main{
     gap: 20px;
 }
 .cuadro-contenido {
+    display: inline-block;
+    position: relative;
     padding: 10px;
     text-align: center;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.cuadro-contenido:hover{
+    padding: 10px;
+    text-align: center;
+    background-color: wheat;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+.boton-comprar{
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 1rem;    
+    cursor: pointer;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.cuadro-contenido:hover .boton-comprar {
+    opacity: 1;
+}
+.boton-comprar:hover {
+    background-color: orangered;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7)
 }
 .cuadro-contenido img {
     max-width: 100%;
@@ -138,65 +169,17 @@ main{
     color: #333;
 }
 
-/* Sección de contacto */
-.mitad {
-    width: 100%;
-    float: left;
-    padding: 10px;
+@media (max-width: 1920px) {
+    
 }
-.mitad h3 {
-    color: orange;
-    font-size: 24px;
-    margin-bottom: 15px;
+@media (max-width: 1600px) {
+    
 }
-#contactos p {
-    font-size: 14px;
-    line-height: 1.5;
-}
-.redes li a {
-    color: orange;
-    font-weight: bold;
-    text-decoration: none;
-}
-.redes li a:hover {
-    color: orangered;
-}
-
-/* Formulario de contacto */
-label {
-    font-size: 14px;
-    display: block;
-    margin-bottom: 5px;
-}
-input[type="text"], textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-.button.expanded {
-    background-color: orange;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: block;
-    width: 100%;
-    text-align: center;
-}
-.button.expanded:hover {
-    background-color: orangered;
-}
-
-/* Limpiar floats */
-.contenido::after {
-    content: "";
-    display: table;
-    clear: both;
+@media (max-width: 700px) {
+    .divicion-30{
+        width: 100%;
+    }
+    .divicion-70{
+        width: 100%;
+    }
 }

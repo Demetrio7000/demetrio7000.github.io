@@ -6,9 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="Descripción" content="Aqui encontraras libros exclusivos, únicos firmado por sus autores.">
         <title>CAZANDO SIRENAS</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
         <link rel="short icon" href="https://i.ibb.co/XjqQdT4/Cazando-sirenas-Logo.png">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style-tienda.css">
+        <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="css/loading.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,64 +26,107 @@
                 <nav>
                     <a href="index.html">Portada</a>
                     <a href="exclusivo.html">Exclusivos</a>
-                    <a href="clasicos.html">Clasicos</a>
-                    <a href="catalogo.html">Catalogo</a>
+                    <a href="clasicos.html">Clásicos</a>
+                    <a href="catalogo.html">Catálogo</a>
                     <a href="tienda.html">Tienda</a>
+                </nav>
+            </div>
+            <div class="flotante">
+                <nav class="vertical">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#contactos">contactame</a>
                 </nav>
             </div>
         </header>
         <main>
-            <section id="inicio">
-                <div class="contenedor">
-                    <div>
-                        <img src="https://i.ibb.co/XjqQdT4/Cazando-sirenas-Logo.png" alt="Cazando-sirenas-Logo">
-                        <h2>Encuentranos aqui</h2>
-                        <p>Al costado de la plaza de armas de Puno</p>
+            <div class="contenedor">
+                <section id="inicio">
+                    <div class="tabla sombra">
+                        <div class="divicion-30 descripcion">
+                            <img src="https://i.ibb.co/XjqQdT4/Cazando-sirenas-Logo.png" alt="Cazando-sirenas-Logo">
+                            <h2>Encuentranos aqui</h2>
+                            <p>Al costado de la plaza de armas de Puno</p>
+                        </div>
+                        <div class="divicion-70 mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1017.0549518761815!2d-70.02797126447277!3d-15.839748550789519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915d69f73fff3fa5%3A0x4b0bccfbae9dc8f0!2sBiblioteca%20Municipal%20de%20Puno!5e1!3m2!1ses-419!2spe!4v1729637945498!5m2!1ses-419!2spe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
-                    <div class="mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1017.0549518761815!2d-70.02797126447277!3d-15.839748550789519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915d69f73fff3fa5%3A0x4b0bccfbae9dc8f0!2sBiblioteca%20Municipal%20de%20Puno!5e1!3m2!1ses-419!2spe!4v1729637945498!5m2!1ses-419!2spe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </section>
+                </section>
 
-            <section>
-                <div id="contactos" class="contenedor">
-                    <div class="mitad">
-                        <h3>Contactame</h3>
-                        <p>
-                            Estamos ubicados al alcanse de un click. 
-                            puedes encontrarnos en nuestras redes, o enviarnos un mensaje.
-                        </p>
-                        <ul class="redes">
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">051-123456</a></li>
-                        </ul>
+                <section id="contactos">
+                    <div class="tabla sombra">
+                        <div class="divicion-50 contactame">
+                            <h3>Contactanos</h3>
+                            <p>
+                                Estamos ubicados al alcanse de un click. 
+                                puedes encontrarnos en nuestras redes, o enviarnos un mensaje.
+                            </p>
+                            <ul class="redes">
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                                <li><a href="#">051-123456</a></li>
+                            </ul>
+                        </div>
+                        <div class="divicion-50 contactame">
+                            <label>
+                                Nombre
+                                <input type="text" placeholder="Nombre y apellido">
+                            </label>
+                            <label>
+                                Correo electrónico
+                                <input type="text" placeholder="Email">
+                            </label>
+                            <label>
+                                Mensaje
+                                <textarea placeholder="¡Hola! aqui puedes dejar tu mensaje:"></textarea>
+                            </label>
+                            <input type="submit" class="button expanded" value="Enviar">
+                        </div>
                     </div>
-                    <div class="mitad">
-                        <label>
-                            Nombre
-                            <input type="text" placeholder="nombre y apellido">
-                        </label>
-                        <label>
-                            Correo electrónico
-                            <input type="text" placeholder="Email">
-                        </label>
-                        <label>
-                            Mensaje
-                            <textarea placeholder="¡Hola! aqui puedes dejar tu mensaje:"></textarea>
-                        </label>
-                        <input type="submit" class="button expanded" value="Enviar">
+                    
+                </section>
+                <section class="loader">
+                    <div id="animationWindow"></div>
+                    <div>
+                        <h1 class="escribir"> Cargando...<span>&#160;</span></h1>                    
                     </div>
-                </div>
-            </section>
-            <section class="loader">
-                <div id="animationWindow"></div>
-                <div>
-                    <h1 class="escribir"> Cargando...<span>&#160;</span></h1>                    
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
-    </body>    
+    </body>  
+    <footer>
+        <div class="marco">
+            <div class="cuadro">
+                <div class="columna-33">
+                    <img src="https://i.ibb.co/XjqQdT4/Cazando-sirenas-Logo.png" alt="cazando" class="logo-footer">
+                </div>
+                <div class="columna-30">
+                    <h3>
+                        SOPORTE
+                    </h3>
+                    <ul>
+                        <li><a href="#">Mis pedidos</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">¿Quieres publicar?</a></li>
+                        <li>Telefono: 051-123123</li>
+                    </ul>
+                </div>
+                <div class="columna-30">
+                    <h3>
+                        REDES SOCIALES
+                    </h3>
+                    <ul class="redes">
+                        <li><a href="#"><i class="fa fa-envelope" ></i> Gmail</a></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa-brands fa-square-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fa-brands fa-square-whatsapp"></i> Whatsapp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="demetrio">
+            &copy; Derecho Reservados - 2024 - Demetrio
+        </div>
+    </footer>  
     <script src="css/loading.js"></script>
 </html>

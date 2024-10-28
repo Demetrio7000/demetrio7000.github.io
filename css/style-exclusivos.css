@@ -51,6 +51,18 @@ main{
 section{
     margin: 15px 0;
 }
+.tabla{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.tabla>div{
+    margin: 0;
+    padding: 15px;
+}
+.divicion-30{
+    flex: 3;
+}
 /* TEXTO NAVEGAR*/
 .flotante {
     display: flex;
@@ -86,58 +98,52 @@ section{
     text-align: center;
     margin: 0 auto;
     width: auto;
-    min-width: 700px;
     max-width: 1600px;
     overflow: hidden;
 }
 .contenedor img {
     border-radius: 20px;
     width: 100%;
-    aspect-ratio: 16 / 7;
+    height: auto;
     display: block;
 }
+.contenedor h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.contenedor p {
+    font-size: 1rem;
+}   
 
 /* Texto sobre imágenes */
-.contenido {
+.contenido-texto{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 20%;
+    left: 0;
     color: wheat;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     border-radius: 8px;
     width: 80%;
 }
-.contenido:hover{
-    border: 1px;
-    border-color: black;
-    background-color: rgba(0, 0, 0, 0.7);
+/* tres libros*/
+.contenido-especial{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    height: auto;
+    width: 100%;
 }
-.contenido img{
-    width: 25%;
-}
-.contenedor h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.contenedor p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-.boton-agregar {
-    background-color: orange;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.5s;
-}
-.boton-agregar:hover {
-    background-color: orangered;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7)
+/* libro solo */
+.contenido-exclusivo{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    color: wheat;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
 }
