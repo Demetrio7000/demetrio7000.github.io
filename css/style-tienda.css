@@ -177,7 +177,7 @@ input:hover{
     border: 1px solid orange;
 }
 input:focus-visible{
-    outline-color: red;
+    outline-color: orangered;
     background-color: wheat;
 }
 
@@ -195,7 +195,7 @@ textarea:hover{
     border: 1px solid orange;
 }
 textarea:focus-visible{
-    outline-color: red;
+    outline-color: orangered;
     background-color: wheat;
 }
 .boton-enviar {
