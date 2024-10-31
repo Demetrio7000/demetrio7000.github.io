@@ -198,26 +198,69 @@ textarea:focus-visible{
     outline-color: orangered;
     background-color: wheat;
 }
-.boton-enviar {
-    display: block;
-    width: 100%;
+.boton{
+    border: 0 5px;
     padding: 10px;
+    text-align: center;
     font-size: 1rem;
     color: wheat;
     background-color: orange;
-    border: 0 5px;
     border-radius: 5px;
     cursor: pointer;
-    text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
-.boton-enviar:hover {
+.boton:hover {
     background-color: orangered;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+.boton-pagar2{
+    width: 100px;
+    font-weight: bold;
+}
+.boton-vaciar{
+    width: 100px;
+    font-weight: bold;
+} 
+.boton-enviar{
+    display: block;
+    width: 100%;
 }
 
 @media (max-width: 700px) {
     .tabla{
         display: block;
     }
+}
+/* CARRITO DE COMPRA */
+.sombra h3 {
+    font-size: 2rem;
+    color: orange;
+    margin-bottom: 10px;
+}
+.sombra p {
+    font-size: 16px;
+    color: black;
+}
+/* lista de compra */
+.cuadro-contenido {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: wheat;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+.cuadro-contenido img {
+    height: 200px;
+    border-radius: 5px;
+    margin: 15px;
+}
+.texto{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+.cuadro-contenido span {
+    padding: 15px;
 }

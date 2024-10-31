@@ -183,3 +183,60 @@ main{
         width: 100%;
     }
 }
+
+
+/* Texto pagar e ir principio */
+.carrito-compra {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    background-color: wheat;
+    border-radius: 20px;
+    z-index: 3;
+}
+.carrito-compra h3{
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: wheat; */
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+#libros-comprados{
+    list-style-type: none;
+    padding: 0;
+}
+#libros-comprados li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;/* Opcional, solo para separarlos */
+}
+.nombre {
+    text-align: left;
+}
+.precio {
+    text-align: right;
+}
+.boton-pagar{
+    display: ruby-base-container;
+    width: 100%;
+    background-color: orange;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+.boton-pagar:hover{
+    background-color: orangered;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+.boton-limpiar{
+    display: ruby-base-container;
+    width: 100%;
+    background-color: orange;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+.boton-limpiar:hover{
+    background-color: orangered;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
